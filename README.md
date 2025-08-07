@@ -9,8 +9,9 @@ Employees return all types of assets (monitors, ID cards, laptops, etc.), but on
 ------------------------------------------------------------------------------------------------------------
 All > DXC Technologies > Device Inventory <br>
 The Laptops need specific **fields** so to add a field to the form: <br>
-- Click on one of the records and right click on the header <br>
-- t Configure > Layout <br>
+- Click on one of the records to see the Form Builder option.  <br>
+- Right click on the header. Configure > Form Builder <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20one%20of%20the%20records%20to%20show%20Form%20Builder%20option.png?raw=true)
 
 
 
