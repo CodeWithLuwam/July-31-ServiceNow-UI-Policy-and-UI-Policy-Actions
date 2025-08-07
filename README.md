@@ -12,7 +12,9 @@ The Laptops need specific **fields** so to add a field to the form: <br>
 - Click on one of the records to see the Form Builder option.  <br>
 - Right click on the header. Configure > Form Builder <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20one%20of%20the%20records%20to%20show%20Form%20Builder%20option.png?raw=true)
-
+- To create a new field, we will press the '+ Add a field in the table' option
+- We will give the Column label * a name and Column name * will automatically populate and we will leave the data Type * as a string <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Name%20the%20field%20we%20have%20created.png?raw=true)
 
 
 ------------------------------------------------------------------------------------------------------------
