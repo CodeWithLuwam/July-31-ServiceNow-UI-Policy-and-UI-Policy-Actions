@@ -15,7 +15,8 @@ The Laptops need specific **fields** so to add a field to the form: <br>
 - To create a new field, we will press the '+ Add a field in the table' option
 - We will give the Column label * a name and Column name * will automatically populate and we will leave the data Type * as a string <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Name%20the%20field%20we%20have%20created.png?raw=true)
-
+Our newly created field will be on the left and we will have to drag it to the form to officially add it and save. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20field%20added.png?raw=true)
 
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
