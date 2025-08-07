@@ -44,6 +44,7 @@ All > System Definition > UI Policies <br>
 - If you change the**Asset Type**  to something that doesn't match the condition (e.g., **Monitor**), the **Laptop Serial Number** field disappears.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/When%20Condition%20is%20Not%20Met.png?raw=true)
 
+Bonus, Replace the Asset tag with **Laptop Serial Number** when Laptop is selected
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 Task: <br>
