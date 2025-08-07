@@ -21,9 +21,10 @@ The Laptops need specific **fields** so to add a field to the form: <br>
  - All > System Definition > UI Policies **OR** go to the Asset Recovery table, right click on the columns and see UI Policies.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policies.png?raw=true)
  - We will select New <br>
+ - We are associating the UI Policy with the Asset Recovery table <br>
  - There is no name but Short description is required <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Short%20Description%20for%20UI%20Policy.png?raw=true)
-- For our condition, we want to ensure it only appears and becomes required when Asset Type is laptop. <br>
+- We create a condition that the UI should only appears and become required when Asset Type is laptop. <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20appears%20when%20Asset%20Type%20is%20laptop.png?raw=true)
 
 
