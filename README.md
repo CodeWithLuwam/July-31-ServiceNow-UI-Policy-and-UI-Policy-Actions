@@ -26,8 +26,12 @@ The Laptops need specific **fields** so to add a field to the form: <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Short%20Description%20for%20UI%20Policy.png?raw=true)
 - We create a condition that the UI should only appears and become required when Asset Type is laptop. <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20appears%20when%20Asset%20Type%20is%20laptop.png?raw=true)
-- When we save our changes after the previous step, 'UI Policy Actions' tab shows up.
+- When we save our changes after the previous step, 'UI Policy Actions' tab appears.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Actions%20tab.png?raw=true)
+- We click New to create the action that will run when our condition is met. <br>
+- So when the Asset Type is laptop we want to interact with the field we created before: **Laptop Serial Number** <br>
+  - We want the field Laptop Serial Number to be Mandatory and Visible
+    ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20Record%20of%20New%20UI%20Policy%20Action.png?raw=true)
 
 
 ------------------------------------------------------------------------------------------------------------
