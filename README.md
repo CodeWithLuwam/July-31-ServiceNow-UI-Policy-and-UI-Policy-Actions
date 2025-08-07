@@ -7,7 +7,7 @@ Employees return all types of assets (monitors, ID cards, laptops, etc.), but on
 - Step 3: Add a UI Policy Action
 - Step 4: Test Your Work
 ------------------------------------------------------------------------------------------------------------
-1.Add a Custom Field to the Form<br>
+1. Add a Custom Field to the Form<br>
 Navigation: <br>
 All > DXC Technologies > Device Inventory <br>
 The Laptop Asset Type requires specific **fields**. To add a custom field to the form: <br>
@@ -19,7 +19,7 @@ The Laptop Asset Type requires specific **fields**. To add a custom field to the
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Name%20the%20field%20we%20have%20created.png?raw=true)
 - The newly created field will appear on the left. Drag it onto the form layout to officially add it, and **Save**. <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20field%20added.png?raw=true) <br>
-2.Create a UI Policy <br>
+2. Create a UI Policy <br>
  Navigation: <br>
 All > System Definition > UI Policies <br>
 **OR** go to the **Asset Recovery** table, right-click on a column, and select **UI Policies**.
