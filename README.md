@@ -32,7 +32,11 @@ The Laptops need specific **fields** so to add a field to the form: <br>
 - So when the Asset Type is laptop we want to interact with the field we created before: **Laptop Serial Number** <br>
   - We want the field Laptop Serial Number to be Mandatory and Visible
     ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20Record%20of%20New%20UI%20Policy%20Action.png?raw=true)
-
+- We will test by going to Asset Recovery Request table and create a New record
+  - When we choose the Laptop Asset Type, Laptop Serial Number becomes Visible and Mandatory.
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Create%20New%20record%20to%20Test%20the%20Asset%20Type.png?raw=true)
+  - And if we change the field to where our condition is not met, for example, we choose Monitor,  Laptop Serial Number disappears
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/When%20Condition%20is%20Not%20Met.png?raw=true)
 
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
