@@ -51,6 +51,13 @@ All > System Definition > UI Policies <br>
   ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Action%20Field%20name%20Asset%20Tag%20Visible%20False.png?raw=true)
 - After we select **Save**, the UI Policy for **Asset Tag** appears under the **UI Policy Actions** tab
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Tag%20UI%20Action%20Appears%20in%20UI%20Policy%20Actions%20tab.png?raw=true)
+
+## To Test <br>
+- We return to Asset Recovery Request. <br>
+- When we select **Tablet** for **Asset Type**, the **Laptop Serial Number** field disappears <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Type%20Tablet,%20Laptop%20Serial%20Number%20disappears%20.png?raw=true)
+- When we select **Laptop** for **Asset Type**, **Asset Tag** disappears and **Laptop Serial Number** field appears <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Type%20Laptop%20Laptop%20Serial%20Number%20appears%20and%20Asset%20Tag%20disappears.png?raw=true)
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 Task: <br>
