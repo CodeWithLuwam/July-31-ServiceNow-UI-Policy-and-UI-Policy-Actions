@@ -7,57 +7,79 @@ Employees return all types of assets (monitors, ID cards, laptops, etc.), but on
 - Step 3: Add a UI Policy Action
 - Step 4: Test Your Work
 ------------------------------------------------------------------------------------------------------------
-1. Add a Custom Field to the Form<br>
-Navigation: <br>
-All > DXC Technologies > Device Inventory <br>
-The Laptop Asset Type requires specific **fields**. To add a custom field to the form: <br>
-- Click on one of the records to see the **Form Builder** option.  <br>
-- Right click on the header, then choose **Configure > Form Builder** <br>
+**Step 1. Add a Custom Field to the Form**<br>
+- Navigation: <br>
+  All > DXC Technologies > Device Inventory <br>
+- The Laptop Asset Type requires specific **fields**. To add a custom field to the form: <br>
+ 1. Click on one of the records to see the **Form Builder** option.  <br>
+ 2. Right click on the header, then choose: **Configure > Form Builder** <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20one%20of%20the%20records%20to%20show%20Form%20Builder%20option.png?raw=true)
-- To create a new field, click **'+ Add a field in the table'**.
-- Set the **Column label*** (a name for the field). The **Column name*** will automatically populate. Leave the **Type*** as a "String". <br>
+ 3. To create a new field, click **'+ Add a field in the table'**.
+ 4. Set the **Column label*** (field name). The **Column name*** will automatically populate. 
+ 5. Leave the **Type*** as a "String". <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Name%20the%20field%20we%20have%20created.png?raw=true)
-- The newly created field will appear on the left. Drag it onto the form layout to officially add it, and **Save**. <br>
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20field%20added.png?raw=true) <br>
-2. Create a UI Policy <br>
- Navigation: <br>
-All > System Definition > UI Policies <br>
-**OR** go to the **Asset Recovery** table, right-click on a column, and select **UI Policies**.
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policies.png?raw=true)
- - Click **New** to create a new UI Policy <br>
- - Associate the UI Policy with the Asset Recovery table <br>
- - There is no name but Short description is required <br>
+ 6. The new field will appear on the left. Drag it into the form layout to officially add it.
+ 7. Click **Save**. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20field%20added.png?raw=true)<br>
+
+    ---
+**Step 2. Create a UI Policy** <br>
+- **Navigation:** <br>
+  All > System Definition > UI Policies <br>
+  **OR** 
+  Right-click on any column in the **Asset Recovery** table and select **UI Policies**.
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policies.png?raw=true) <br>
+- Click **New** to create a new UI Policy
+- Associate the UI Policy with the **Asset Recovery** table
+- There is no name field, but **Short Description** is required
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Short%20Description%20for%20UI%20Policy.png?raw=true)
-3. Define the UI Policy Condition
-- Create a condition so that the UI only appears and becomes required when the **Asset Type** is **Laptop**. <br>
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20appears%20when%20Asset%20Type%20is%20laptop.png?raw=true)
-- After saving, **UI Policy Actions** tab appears.
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Actions%20tab.png?raw=true)
+- Define a UI Policy Condition to control when the UI field appears: *"When Asset Type is Laptop"* <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20appears%20when%20Asset%20Type%20is%20laptop.png?raw=true) <br>
+
+    ---
+**Step 3: Add a UI Policy Action**
+- After saving the UI Policy, a **UI Policy Actions** tab will appear. <br>
 - Click **New** to define the action should occur when the condition is met. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Actions%20tab.png?raw=true)
 - When the **Asset Type** is **Laptop**, we want to interact with the previously created field: **Laptop Serial Number** <br>
-  - Set **Laptop Serial Number** to be **Mandatory** and **Visible**
-    ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20Record%20of%20New%20UI%20Policy%20Action.png?raw=true)
-4. Test the UI Policy <br>
-- Go to **Asset Recovery Request** table and create a New record
-- When we select **Laptop** as the Asset Type, the **Laptop Serial Number** field becomes **Visible** and **Mandatory**.
+  - Set **Laptop Serial Number** to be:<br>
+    - **Mandatory**: True <br>
+    - **Visible**: True <br>
+    ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/New%20Record%20of%20New%20UI%20Policy%20Action.png?raw=true) <br>
+    ---
+**Step 4: Test Your Work - Ensure Fields Respond to Asset Type Selection** <br>
+- Go to the **Asset Recovery Request** table.
+- Create a New Record. <br>
+- When Asset Type = **Laptop**:
+  - **Laptop Serial Number** becomes **Visible** and **Mandatory**.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Create%20New%20record%20to%20Test%20the%20Asset%20Type.png?raw=true)
-- If you change the**Asset Type**  to something that doesn't match the condition (e.g., **Monitor**), the **Laptop Serial Number** field disappears.
+- When **Asset Type** ≠ **Laptop** (e.g., **Monitor**): <br>
+  - **Laptop Serial Number** field disappears.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/When%20Condition%20is%20Not%20Met.png?raw=true)
 
-## Bonus, Replace the Asset Tag with **Laptop Serial Number** when Laptop is selected <br>
--  To create a UI policy, return to the UI Policy we already created and select **New** in the **UI Policy Actions** tab
+## Bonus: Replace Asset Tag with **Laptop Serial Number** when Laptop is selected <br>
+- To create another UI policy, return to the UI Policy we already created. <br>
+- Under the **UI Policy Actions** tab, click **New**.
   ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Select%20New%20in%20the%20UI%20Policy%20Action.png?raw=true)
-- Field name would be Asset Tag (that's the target) and **Visible** would be False
+- Create another action: <br>
+  - **Field Name**: Asset Tag
+  - **Visible**: False
   ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Action%20Field%20name%20Asset%20Tag%20Visible%20False.png?raw=true)
-- After we select **Save**, the UI Policy for **Asset Tag** appears under the **UI Policy Actions** tab
+- After we select **Save**, the UI Policy for **Asset Tag** will now appear under the **UI Policy Actions** tab.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Tag%20UI%20Action%20Appears%20in%20UI%20Policy%20Actions%20tab.png?raw=true)
 
-## To Test <br>
-- We return to Asset Recovery Request. <br>
-- When we select **Tablet** for **Asset Type**, the **Laptop Serial Number** field disappears <br>
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Type%20Tablet,%20Laptop%20Serial%20Number%20disappears%20.png?raw=true)
-- When we select **Laptop** for **Asset Type**, **Asset Tag** disappears and **Laptop Serial Number** field appears <br>
+---
+**Test Your Work - Verify Laptop Serial Number and Asset Tag Visibility Logic** <br>
+- Open an Asset Recovery Request record. <br>
+- When **Asset Type** = **Laptop**: <br>
+  - **Laptop Serial Number** appears <br>
+  - **Asset Tag** disappears <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Type%20Laptop%20Laptop%20Serial%20Number%20appears%20and%20Asset%20Tag%20disappears.png?raw=true)
+- when  **Asset Type** = **Tablet** (or anything else):
+  - **Laptop Serial Number** disappears <br>
+  - **Asset Tag** disappears <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Type%20Tablet,%20Laptop%20Serial%20Number%20disappears%20.png?raw=true)
+
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 Task: <br>
