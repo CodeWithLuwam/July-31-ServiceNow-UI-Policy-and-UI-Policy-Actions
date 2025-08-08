@@ -82,6 +82,11 @@ Employees return all types of assets (monitors, ID cards, laptops, etc.), but on
 
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
+# Use UI Policy Script to Validate Laptop Serial Number Contains Only Digits
+
+[ We're still working within the **Asset Recovery Request** table, using the same UI Policy condition: *Asset Type = Laptop*. <br>
+This step adds script validation to the **Laptop Serial Number** field. ] <br> 
+
 Task: <br>
 Employees sometimes confuse model number with serial number, but the model number has letters, and the serial number should only be digits. To reduce errors, write a short script that checks the Laptop Serial Number field and warns the user if they enter letters.
 
