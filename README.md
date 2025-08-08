@@ -47,7 +47,10 @@ All > System Definition > UI Policies <br>
 ## Bonus, Replace the Asset Tag with **Laptop Serial Number** when Laptop is selected <br>
 -  To create a UI policy, return to the UI Policy we already created and select **New** in the **UI Policy Actions** tab
   ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Select%20New%20in%20the%20UI%20Policy%20Action.png?raw=true)
-
+- Field name would be Asset Tag (that's the target) and **Visible** would be False
+  ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/UI%20Policy%20Action%20Field%20name%20Asset%20Tag%20Visible%20False.png?raw=true)
+- After we select **Save**, the UI Policy for **Asset Tag** appears under the **UI Policy Actions** tab
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Asset%20Tag%20UI%20Action%20Appears%20in%20UI%20Policy%20Actions%20tab.png?raw=true)
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 Task: <br>
