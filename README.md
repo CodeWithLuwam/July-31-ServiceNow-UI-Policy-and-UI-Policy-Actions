@@ -98,3 +98,10 @@ Employees sometimes confuse model number with serial number, but the model numbe
 - Script location: Script tab of your UI Policy
 - Use the "Execute if true" tab to enter script <br>
 <br>
+
+- We will be creating with the same UI Policy we created: Require LaptopSerial Number <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20the%20Same%20UI%20Policy%20We%20Created.png?raw=true) <br>
+The reason we will keep using this is because we still want the Serial Number to appear, the Asset Tags to disappear but, on top of that, we are going to add a script. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20Advanced%20View%20to%20see%20the%20Script%20tab.png?raw=true) <br>
+
+
