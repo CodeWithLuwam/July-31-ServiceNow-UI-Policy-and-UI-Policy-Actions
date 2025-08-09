@@ -99,14 +99,22 @@ Employees sometimes confuse model number with serial number, but the model numbe
 - Use the "Execute if true" tab to enter script <br>
 <br>
 
-- We will be creating with the same UI Policy we created: Require LaptopSerial Number <br>
+We will be creating with the same UI Policy we created: Require LaptopSerial Number <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20the%20Same%20UI%20Policy%20We%20Created.png?raw=true) <br>
 The reason we will keep using this is because we still want the Serial Number to appear, the Asset Tags to disappear but, on top of that, we are going to add a script. <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20Advanced%20View%20to%20see%20the%20Script%20tab.png?raw=true) <br>
 - Inside the Script tab, check the **Run scripts** box to display the **Script Editor** fields. <br>
 - In our script, to pull a value from the form, we need `g_form` object and its `getValue()` method.<br>
   - inside the `getValue()` specify the field's name (not the label the client sees) in quotation marks. <br>
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/g_form.getValue().png?raw=true)
-
+  1. **Get the field value**: <br>
+    - Uses the g_form.getValue() method to pull the value from the u_laptop_serial_number field on the form. <br>
+    - Returns the value as a string, even if the field contains numbers.
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/g_form.getValue().png?raw=true) <br>
+  2. **Check if it contains letters**: <br>
+    - `/[a-zA-Z]/` is a regular expression that matches any uppercase (`A-Z`) or lowercase `(a-z`) letter.  <br>
+    - `.test(serial)` checks the `serial` string against the regular expression. <br>
+    - `hasLetters` will be: <br>
+        - `true` if **at least one letter** is found in the serial number. <br>
+        - `false` if there are **no letters** (numbers or symbols only). <br>
 
 
