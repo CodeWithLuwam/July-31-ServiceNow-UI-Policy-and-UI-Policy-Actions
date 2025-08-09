@@ -107,8 +107,8 @@ The reason we will keep using this is because we still want the Serial Number to
 - In our script, to pull a value from the form, we need `g_form` object and its `getValue()` method.<br>
   - inside the `getValue()` specify the field's name (not the label the client sees) in quotation marks. <br>
   1. **Get the field value**: <br>
-    - Uses the g_form.getValue() method to pull the value from the u_laptop_serial_number field on the form. <br>
-    - Returns the value as a string, even if the field contains numbers.
+    - Use the `g_form.getValue()` method to pull the value from the `u_laptop_serial_number` field on the form. <br>
+    - Returns the value **as a string**, even if the field contains numbers.
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/g_form.getValue().png?raw=true) <br>
   2. **Check if it contains letters**: <br>
     - `/[a-zA-Z]/` is a regular expression that matches any uppercase (`A-Z`) or lowercase `(a-z`) letter.  <br>
@@ -116,5 +116,6 @@ The reason we will keep using this is because we still want the Serial Number to
     - `hasLetters` will be: <br>
         - `true` if **at least one letter** is found in the serial number. <br>
         - `false` if there are **no letters** (numbers or symbols only). <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Check%20if%20hasLetters()%20Contains%20Letters.png?raw=true)
 
 
