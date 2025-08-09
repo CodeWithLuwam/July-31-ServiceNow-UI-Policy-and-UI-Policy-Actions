@@ -103,5 +103,9 @@ Employees sometimes confuse model number with serial number, but the model numbe
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20on%20the%20Same%20UI%20Policy%20We%20Created.png?raw=true) <br>
 The reason we will keep using this is because we still want the Serial Number to appear, the Asset Tags to disappear but, on top of that, we are going to add a script. <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20Advanced%20View%20to%20see%20the%20Script%20tab.png?raw=true) <br>
+- Inside the Script tab, check the **Run scripts** box to display the **Script Editor** fields. <br>
+- In our script, to pull a value from the form, we need `g_form` object and its `getValue()` method.<br>
+  - inside the `getValue()` specify the field's name (not the label the client sees) in quotation marks.
+
 
 
