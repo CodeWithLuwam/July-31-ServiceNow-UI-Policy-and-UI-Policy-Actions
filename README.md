@@ -105,7 +105,8 @@ The reason we will keep using this is because we still want the Serial Number to
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Click%20Advanced%20View%20to%20see%20the%20Script%20tab.png?raw=true) <br>
 - Inside the Script tab, check the **Run scripts** box to display the **Script Editor** fields. <br>
 - In our script, to pull a value from the form, we need `g_form` object and its `getValue()` method.<br>
-  - inside the `getValue()` specify the field's name (not the label the client sees) in quotation marks.
+  - inside the `getValue()` specify the field's name (not the label the client sees) in quotation marks. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/g_form.getValue().png?raw=true)
 
 
 
