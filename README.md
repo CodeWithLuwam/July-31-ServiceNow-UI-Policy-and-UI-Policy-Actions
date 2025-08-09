@@ -127,4 +127,10 @@ The reason we will keep using this is because we still want the Serial Number to
     - Use `g_form.hideFieldMsg()` to remove any existing error message:
         - First parameter: field name (`'u_laptop_serial_number'`)
         - Second parameter: `true` (clears the message)
-![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Form%20Validation%20-%20Serial%20Number%20Numeric%20Check%202.png?raw=true)
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Form%20Validation%20-%20Serial%20Number%20Numeric%20Check%202.png?raw=true) <br>
+---
+To test, we'll open any user in the **Asset Recovery Request** table and for **Laptop Serial Number** we'll put letters and digits and we'll try and save. <br>
+- We are met with an Error message. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Laptop%20Serial%20Number%20Error%20Message.png?raw=true) <br>
+- Without the letters, the error message disppears. <br>
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Error%20Message%20Disappears.png?raw=true)
