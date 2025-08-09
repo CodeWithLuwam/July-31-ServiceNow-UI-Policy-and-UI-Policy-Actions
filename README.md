@@ -117,5 +117,14 @@ The reason we will keep using this is because we still want the Serial Number to
         - `true` if **at least one letter** is found in the serial number. <br>
         - `false` if there are **no letters** (numbers or symbols only). <br>
 ![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Check%20if%20hasLetters()%20Contains%20Letters.png?raw=true)
-
-
+  3. **Show or hide error messages based on validation**: <br>
+    - `if(hasLetters)` - If the serial number contains any letters (meaning `hasLetters` is true) <br>
+    - Use `g_form.showFieldMsg()` to display an error message to the user: <br> 
+        - First parameter: field name (`'u_laptop_serial_number'`) <br>
+        - Second parameter: the error message text (`'Serial number must contain numbers only.'`) <br>
+        - Third parameter: `'error'` - specifies the message type/style (displays as an error with red styling)
+    - `else` - If the serial number does NOT contain letters (meaning `hasLetters` is `false`) <br>
+    - Use `g_form.hideFieldMsg()` to remove any existing error message:
+        - First parameter: field name (`'u_laptop_serial_number'`)
+        - Second parameter: `true` (clears the message)
+![](https://github.com/CodeWithLuwam/ServiceNow-UI-Policy-and-UI-Policy-Actions/blob/main/Images/Form%20Validation%20-%20Serial%20Number%20Numeric%20Check%202.png?raw=true)
